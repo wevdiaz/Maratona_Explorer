@@ -24,6 +24,7 @@ body {
     place-content: center;
     
     margin: 10vh 0;
+    color: var(--color-primary);
 
     background-color: var(--color-bg);
 }
@@ -87,4 +88,16 @@ body {
 
 .container button:hover {
     background-color: var(--color-button-hover);
+}
+
+.container h3 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#resposta div {
+    font-size: 1.6rem;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 1rem;
 }
