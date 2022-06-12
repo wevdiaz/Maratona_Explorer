@@ -20,13 +20,29 @@ const answers = [
     "Sinais apontam que sim.",
 ];
 
-const answerElement = document.getElementById("respostas");
+const answerElement = document.getElementById("resposta");
 
+function checkInputValue() {
+    const inputValue = document.querySelector(".container input[name='question']").value;
+    
+    if (inputValue === "") {
+        answerElement.textContent = "";
+        return false;
+    }
+
+    return true;
+}
 
 function askQuestion() {
+    const checkInputField = checkInputValue() ;
+    
+    if (checkInputField === false) {
+        return alert("Preencha o campo da pergunta!");
+    }
+
     const totalAnswers = answers.length;
     const numberRandom = Math.floor(Math.random() * totalAnswers);
-    console.log(answers[numberRandom]);
     
     answerElement.textContent = answers[numberRandom];
 }
+
