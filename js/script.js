@@ -22,10 +22,9 @@ const answers = [
 
 const answerElement = document.getElementById("resposta");
 
-function checkInputValue() {
-    const inputValue = document.querySelector(".container input[name='question']").value;
+function checkInputValue(input) {
     
-    if (inputValue === "") {
+    if (input === "") {
         answerElement.textContent = "";
         return false;
     }
@@ -33,16 +32,27 @@ function checkInputValue() {
     return true;
 }
 
+
+function disappearMessage(message) {
+    message.style.opacity = "0";
+}
+
 function askQuestion() {
-    const checkInputField = checkInputValue() ;
+    const inputValue = document.querySelector(".container input[name='question']").value;
+    const checkInputField = checkInputValue(inputValue);
     
     if (checkInputField === false) {
-        return alert("Preencha o campo da pergunta!");
+        return alert("Faça alguma pergunta abaixo!");
     }
 
     const totalAnswers = answers.length;
     const numberRandom = Math.floor(Math.random() * totalAnswers);
-    
-    answerElement.textContent = answers[numberRandom];
-}
 
+    const divQuestion = `<div>${inputValue}</div>`;
+    
+    answerElement.innerHTML = divQuestion + "<br />" + answers[numberRandom];   
+    answerElement.style.opacity = "1";
+
+    setTimeout(disappearMessage, 3000, answerElement);
+    
+}

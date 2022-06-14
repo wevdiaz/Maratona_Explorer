@@ -95,6 +95,10 @@ body {
     margin-top: 3rem;
 }
 
+#resposta {
+    transition: opacity 1s;
+}
+
 #resposta div {
     font-size: 1.6rem;
     font-weight: normal;
