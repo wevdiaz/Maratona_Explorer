@@ -8,6 +8,7 @@
     --color-bg: #000;
     --color-button: blueviolet;
     --color-button-hover: #9257ac;
+    --button-clear: #fa8231;
 }
 
 * {
@@ -104,4 +105,13 @@ body {
     font-weight: normal;
     opacity: 0.9;
     margin-bottom: 1rem;
+}
+
+#btn-clear {
+    margin-top: 1.6rem;
+    background-color: var(--button-clear);
+}
+
+#btn-clear:hover {
+    background-color: #fcb484;
 }

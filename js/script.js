@@ -41,7 +41,7 @@ function askQuestion() {
     const inputValue = document.querySelector(".container input[name='question']").value;
     const checkInputField = checkInputValue(inputValue);
     
-    if (checkInputField === false) {
+    if (!checkInputField) {
         return alert("Faça alguma pergunta abaixo!");
     }
 
@@ -55,4 +55,16 @@ function askQuestion() {
 
     setTimeout(disappearMessage, 3000, answerElement);
     
+}
+
+function clearQuestion() {
+    const inputValue = document.querySelector(".container input[name='question']");
+    const checkInputField = checkInputValue(inputValue.value);
+    
+    if (!checkInputField) {
+        return alert("Faça alguma pergunta abaixo!");
+    }
+
+    inputValue.value = "";
+    inputValue.focus();
 }
