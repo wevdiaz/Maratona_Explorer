@@ -2,6 +2,12 @@
 
 ***
 
+<p align="center">
+    <img src="https://raw.githubusercontent.com/wevdiaz/Maratona_Explorer/main/img/maratonaExplorer.gif">
+</p>
+
+***
+
  <p align="center">  
       <a>
           <img src="https://img.shields.io/github/repo-size/wevdiaz/Maratona_Explorer?color=%237158e2">        
