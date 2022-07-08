@@ -31,7 +31,7 @@
 </p>
 
 ### :speech_balloon: Sobre
-Fundamentos de programação sendo aplicados para desenvolver essa aplicação simples, mas excelente para reforçar a base de conhecimento sobre cada tecnologia.
+Fundamentos de programação sendo aplicados para desenvolver essa aplicação simples, mas excelente para reforçar a base de conhecimento sobre cada tecnologia. Veja mais [aqui]( https://wevdiaz.github.io/Maratona_Explorer/)
  
  ### :hammer_and_wrench: Tecnologias
  
